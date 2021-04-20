@@ -5,7 +5,7 @@ const PokeballIcon = () => {
 		<svg id="pokeball" viewBox="0 0 138.81 138.81" width="138.81" height="138.81">
 			<defs>
 				<linearGradient id="red-top" y1="100%" x2="0%" y2="0%">
-					<stop offset="0" stop-color="#ff3d00">
+					<stop offset="0" stopColor="#ff3d00">
 						<animate
 							dur="0.75s"
 							attributeName="offset"
@@ -14,7 +14,7 @@ const PokeballIcon = () => {
 							to="1"
 						/>
 					</stop>
-					<stop offset="0" stop-color="#fff">
+					<stop offset="0" stopColor="#fff">
 						<animate
 							dur="0.75s"
 							attributeName="offset"
@@ -25,7 +25,7 @@ const PokeballIcon = () => {
 					</stop>
 				</linearGradient>
 				<linearGradient id="grey" y1="100%" x2="0%" y2="0%">
-					<stop offset="0" stop-color="#37474f">
+					<stop offset="0" stopColor="#000000">
 						<animate
 							dur="0.75s"
 							attributeName="offset"
@@ -34,7 +34,36 @@ const PokeballIcon = () => {
 							to="1"
 						/>
 					</stop>
-					<stop offset="0" stop-color="#fff">
+					<stop offset="0" stopColor="#fff">
+						<animate
+							dur="0.75s"
+							attributeName="offset"
+							fill="freeze"
+							from="0"
+							to="1"
+						/>
+					</stop>
+				</linearGradient>
+				<linearGradient id="center" y1="100%" x2="0%" y2="0%">
+					<stop offset="0" stopColor="#ff3d00">
+						<animate
+							dur="0.75s"
+							attributeName="offset"
+							fill="freeze"
+							from="0"
+							to="1"
+						/>
+					</stop>
+					<stop offset="0" stopColor="#000000">
+						<animate
+							dur="0.75s"
+							attributeName="offset"
+							fill="freeze"
+							from="0"
+							to="1"
+						/>
+					</stop>
+					<stop offset="0" stopColor="#fff">
 						<animate
 							dur="0.75s"
 							attributeName="offset"
@@ -90,9 +119,9 @@ const PokeballIcon = () => {
 				/>
 				<path
 					d="M78.98 72.21C78.98 77.72 74.5 82.21 68.98 82.21C63.46 82.21 58.98 77.72 58.98 72.21C58.98 66.69 63.46 62.21 68.98 62.21C74.5 62.21 78.98 66.69 78.98 72.21Z"
-					id="f3YExahdAA"
+					id="pokeballdot"
 					opacity="1"
-					fill="url(#grey)"
+					fill="#000000"
 					fillOpacity="1"
 				/>
 			</g>

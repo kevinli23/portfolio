@@ -10,28 +10,33 @@ const Loader = ({ onFinish }) => {
 
 		loader
 			.add({
-				targets: '.loader',
+				targets: 'path#pokeballdot',
+				easing: 'easeInOutQuart',
 				delay: 800,
-				duration: 1000,
+				fill: '#ff3d00',
+			})
+			.add({
+				targets: '.loader',
+				duration: 700,
 				keyframes: [
-					{ translateX: -30 },
-					{ translateX: 30 },
-					{ translateX: -20 },
-					{ translateX: 20 },
-					{ translateX: -10 },
-					{ translateX: 10 },
-					{ translateX: -5 },
-					{ translateX: 5 },
-					{ translateX: -2 },
-					{ translateX: 2 },
-					{ translateX: 0 },
-					{ translateX: 0 },
+					{ rotateZ: -12 },
+					{ rotateZ: 12 },
+					{ rotateZ: -10 },
+					{ rotateZ: 10 },
+					{ rotateZ: -7 },
+					{ rotateZ: 7 },
+					{ rotateZ: -5 },
+					{ rotateZ: 5 },
+					{ rotateZ: -2 },
+					{ rotateZ: 2 },
+					{ rotateZ: -1 },
+					{ rotateZ: 0 },
 				],
 				easing: 'easeInOutQuart',
 			})
 			.add({
 				targets: '#pokeball',
-				duration: 300,
+				duration: 500,
 				easing: 'easeInOutQuart',
 				opacity: 0,
 				scale: 0.1,
@@ -39,7 +44,6 @@ const Loader = ({ onFinish }) => {
 	};
 
 	useEffect(() => {
-		console.log('animate!');
 		animate();
 	}, []);
 
