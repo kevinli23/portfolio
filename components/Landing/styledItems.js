@@ -14,7 +14,9 @@ export const LandingMain = styled.div`
 	text-align: center;
 	font-family: ${(props) => props.font};
 	background-image: url('${(props) => props.bgImage}');
+	background-size: cover;
 	background-repeat: no-repeat;
+	z-index: 10;
 `;
 
 export const Row = styled.div`

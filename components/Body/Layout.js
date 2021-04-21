@@ -9,15 +9,15 @@ const Layout = ({ left, main }) => {
 	return (
 		<>
 			{isLargerThan1024 ? (
-				<Grid h="200px" w="100vw" templateColumns="repeat(8, 1fr)">
-					<GridItem colSpan={1} h="200">
-						{left}
-					</GridItem>
-					<GridItem colSpan={6} h="10">
-						<LayoutMain>{main}</LayoutMain>
-					</GridItem>
-					<GridItem colSpan={1} />
-				</Grid>
+				<>
+					<Grid h="min-content" w="100vw" templateColumns="repeat(8, 1fr)">
+						<GridItem colSpan={1}>{left}</GridItem>
+						<GridItem colSpan={6}>
+							<LayoutMain>{main}</LayoutMain>
+						</GridItem>
+						<GridItem colSpan={1} />
+					</Grid>
+				</>
 			) : (
 				<LayoutMain>{main}</LayoutMain>
 			)}

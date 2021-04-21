@@ -8,7 +8,7 @@ const SocialsBar = () => {
 			<FaLinkedin style={{ marginBottom: '10px' }} size="2em" />
 			<FaGithub style={{ marginBottom: '10px' }} size="2em" />
 			<FaFilePdf style={{ marginBottom: '10px' }} size="2em" />
-			<Line height="30" />
+			<Line height="50" />
 		</Container>
 	);
 };
