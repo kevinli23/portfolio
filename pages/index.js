@@ -2,7 +2,8 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Button, ButtonGroup } from '@chakra-ui/react';
 import Loader from '../components/Loader';
-import Landing from '../components/Landing.js';
+import Landing from '../components/Landing';
+import Body from '../components/Body';
 import { useState } from 'react';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
 			) : (
 				<>
 					<Landing />
+					<Body />
 				</>
 			)}
 		</div>

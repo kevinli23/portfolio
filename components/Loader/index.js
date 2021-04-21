@@ -10,17 +10,21 @@ const Loader = ({ onFinish }) => {
 
 		loader
 			.add({
+				targets: '#pokeball',
+				duration: 150,
+				easing: 'easeInOutQuart',
+				opacity: 1,
+			})
+			.add({
 				targets: 'path#pokeballdot',
 				easing: 'easeInOutQuart',
-				delay: 800,
+				delay: 10,
 				fill: '#ff3d00',
 			})
 			.add({
 				targets: '.loader',
-				duration: 700,
+				duration: 450,
 				keyframes: [
-					{ rotateZ: -12 },
-					{ rotateZ: 12 },
 					{ rotateZ: -10 },
 					{ rotateZ: 10 },
 					{ rotateZ: -7 },
@@ -36,7 +40,7 @@ const Loader = ({ onFinish }) => {
 			})
 			.add({
 				targets: '#pokeball',
-				duration: 500,
+				duration: 400,
 				easing: 'easeInOutQuart',
 				opacity: 0,
 				scale: 0.1,
