@@ -79,16 +79,22 @@ const Landing = () => {
 						minWidth: '200px',
 					}}
 				>
-					<FaLinkedin size="3em" />
+					<Link href="https://www.linkedin.com/in/kevinli230/" target="_blank">
+						<FaLinkedin size="3em" />
+					</Link>
 
-					<FaGithub size="3em" />
-					<FaFilePdf size="3em" />
+					<Link href="https://github.com/kevinli23" target="_blank">
+						<FaGithub size="3em" />
+					</Link>
+					<Link
+						href="https://drive.google.com/file/d/1vlJ6Kgt81QMW2h6p1ko9OrkEwb6SdVtI/view?usp=sharing"
+						target="_blank"
+					>
+						<FaFilePdf size="3em" />
+					</Link>
 				</Row>
 			)}
 			{isLargerThan1024 && <div style={{ minHeight: '20vh' }} />}
-			{/* <Row style={{ minWidth: '40%', marginTop: '20px' }}>
-				<Img src={penguin} />
-			</Row> */}
 			<Button
 				style={{
 					position: 'absolute',

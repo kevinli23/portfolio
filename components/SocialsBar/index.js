@@ -25,13 +25,18 @@ const SocialsBar = () => {
 					variant="outline"
 				/>
 			</Link>
-			<IconButton
-				style={{ marginBottom: '10px' }}
-				icon={<FaFilePdf />}
-				fontSize="2em"
-				colorScheme="black"
-				variant="outline"
-			/>
+			<Link
+				href="https://drive.google.com/file/d/1vlJ6Kgt81QMW2h6p1ko9OrkEwb6SdVtI/view?usp=sharing"
+				target="_blank"
+			>
+				<IconButton
+					style={{ marginBottom: '10px' }}
+					icon={<FaFilePdf />}
+					fontSize="2em"
+					colorScheme="black"
+					variant="outline"
+				/>
+			</Link>
 			<Line height="70" color={lineColor} />
 		</Container>
 	);
