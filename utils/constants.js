@@ -42,3 +42,35 @@ export const EXPERIENCE = [
 		image: '/tdsb.png',
 	},
 ];
+
+export const PROJECTS = [
+	{
+		name: 'Playbak',
+		image: 'https://playbak-team.github.io/static/media/landing1.3084bd84.JPG',
+		link: 'https://playbak-team.github.io/',
+		state: '2021 - In Development',
+		tech: 'React and Electron',
+		description:
+			'A desktop application tool to assist with the pains of online school. Comes equipt with a kanban board and an automated playback speed controller that automatically checks for pauses in video lectures and fast forwards it for you!',
+	},
+	{
+		name: 'Hand Sign Ninjutsu Simulator',
+		image: 'https://kevinli23.github.io/me/static/media/image5.4b804766.jpg',
+		link:
+			'https://devpost.com/software/ar-voice-control-and-ml-hand-sign-ninjutsu-battle-simulator',
+		state: 'HTN 2019',
+		tech: 'Python and React',
+		description:
+			'Built at Hack the North 2019, where our team used handsign recognition and our voices to simulate ninjutsu from the anime Naruto in a one versus one AR battle',
+	},
+	{
+		name: 'World Archives',
+		image:
+			'https://kevinli23.github.io/me/static/media/globalarchives.3b64ba77.png',
+		link: 'https://github.com/kevinli23/worldarchives',
+		state: '2019',
+		tech: 'React and Firebase',
+		description:
+			'A Pub/Sub data aggregation service that archives news data in real-time according to client subscriptions. Implemented content classification and sentiment analysis with GCP. Displayed with a React frontend.',
+	},
+];

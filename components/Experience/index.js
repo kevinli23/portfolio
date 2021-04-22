@@ -6,7 +6,7 @@ import ExperienceCard from './ExperienceCard';
 const Experience = () => {
 	return (
 		<>
-			<Heading size="2xl" style={{ marginBottom: '10px', marginTop: '3%' }}>
+			<Heading size="2xl" mb="10px" mt="3%">
 				Experience
 			</Heading>
 			<Divider />
