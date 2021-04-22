@@ -23,10 +23,8 @@ const Loader = ({ onFinish }) => {
 			})
 			.add({
 				targets: '.loader',
-				duration: 450,
+				duration: 300,
 				keyframes: [
-					{ rotateZ: -10 },
-					{ rotateZ: 10 },
 					{ rotateZ: -7 },
 					{ rotateZ: 7 },
 					{ rotateZ: -5 },

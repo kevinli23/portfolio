@@ -79,9 +79,8 @@ const Landing = () => {
 						minWidth: '200px',
 					}}
 				>
-					<Link href="https://www.linkedin.com/in/kevinli230/">
-						<FaLinkedin size="3em" />
-					</Link>
+					<FaLinkedin size="3em" />
+
 					<FaGithub size="3em" />
 					<FaFilePdf size="3em" />
 				</Row>
