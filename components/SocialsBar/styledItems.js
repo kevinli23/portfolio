@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Line = styled.div`
-	border-right: 1px solid black;
+	border-right: 1px solid ${(props) => props.color};
 	min-height: ${(props) => props.height}px;
 	margin-top: 10px;
 	width: 50%;
