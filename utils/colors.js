@@ -15,3 +15,11 @@ export const darkColors = {
 	landingTertiaryTextColor: '#01a252',
 	font: '"Share Tech", sans-serif',
 };
+
+export function getColor(item, mode) {
+	if (mode === 'light') {
+		return lightColors[item];
+	}
+
+	return darkColors[item];
+}
