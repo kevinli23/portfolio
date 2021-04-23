@@ -6,20 +6,28 @@ import {
 	List,
 	ListItem,
 	UnorderedList,
+	useColorMode,
 } from '@chakra-ui/react';
 import { Container } from './styledItems';
 import { FaReact } from 'react-icons/fa';
+import { getColor } from '../../utils/colors';
 
 const About = () => {
+	const { colorMode } = useColorMode();
+	const secondaryColor = getColor('landingSecondaryTextColor', colorMode);
+	const font = getColor('font', colorMode);
+
 	return (
 		<>
-			<Heading size="2xl" style={{ marginBottom: '10px' }}>
+			<Heading size="2xl" mb="10px">
 				About
 			</Heading>
 			<Divider />
 			<Container>
-				<Heading size="md">An introduction to me</Heading>
-				<Text style={{ marginTop: '10px' }}>
+				<Heading fontFamily={font} color={secondaryColor} size="md">
+					An introduction to me
+				</Heading>
+				<Text mt="10px">
 					I am a third year Computer Science student at the University of Waterloo. I
 					enjoy architecting and designing solutions to problems - and of course,
 					programming them. I am actively looking to learn new technologies,
@@ -29,8 +37,10 @@ const About = () => {
 			</Container>
 
 			<Container>
-				<Heading size="md">During my spare time I enjoy</Heading>
-				<UnorderedList style={{ paddingLeft: '2%', marginTop: '10px' }}>
+				<Heading fontFamily={font} color={secondaryColor} size="md">
+					During my spare time I enjoy
+				</Heading>
+				<UnorderedList pl="2%" mt="10px">
 					<ListItem>Keeping up with the NBA</ListItem>
 					<ListItem>Discover new random technologies to experiment with</ListItem>
 					<ListItem>Following crypto (Dogecoin 💎🙌)</ListItem>
@@ -41,8 +51,10 @@ const About = () => {
 			</Container>
 
 			<Container>
-				<Heading size="md">Technologies</Heading>
-				<UnorderedList style={{ paddingLeft: '2%', marginTop: '10px' }}>
+				<Heading fontFamily={font} color={secondaryColor} size="md">
+					Technologies
+				</Heading>
+				<UnorderedList pl="2%" mt="10px">
 					<ListItem>
 						Languages: Java, Python, C#, C++, JavaScript, TypeScript, MySQL
 					</ListItem>

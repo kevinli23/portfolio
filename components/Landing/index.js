@@ -1,9 +1,8 @@
 import React from 'react';
-import { lightColors, darkColors } from '../../utils/colors';
+import { getColor } from '../../utils/colors';
 import {
 	Button,
 	useColorMode,
-	useColorModeValue,
 	Heading,
 	Img,
 	useMediaQuery,
@@ -17,33 +16,12 @@ const Landing = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)');
 
-	const bg = useColorModeValue(
-		lightColors.landingBGColor,
-		darkColors.landingBGColor
-	);
-
-	const color = useColorModeValue(
-		lightColors.landingTextColor,
-		darkColors.landingTextColor
-	);
-
-	const secondaryColor = useColorModeValue(
-		lightColors.landingSecondaryTextColor,
-		darkColors.landingSecondaryTextColor
-	);
-
-	const tertiaryColor = useColorModeValue(
-		lightColors.landingTertiaryTextColor,
-		darkColors.landingTertiaryTextColor
-	);
-
-	const highlightColor = useColorModeValue(
-		lightColors.landingHighlight,
-		darkColors.landingHighlight
-	);
-
-	const font = useColorModeValue(lightColors.font, darkColors.font);
-	const penguin = useColorModeValue('/penguin.png', '/yellowpenguin.png');
+	const bg = getColor('landingBGColor', colorMode);
+	const color = getColor('landingTextColor', colorMode);
+	const font = getColor('font', colorMode);
+	const secondaryColor = getColor('landingSecondaryTextColor', colorMode);
+	const tertiaryColor = getColor('landingTertiaryTextColor', colorMode);
+	const highlightColor = getColor('landingHighlight', colorMode);
 
 	return (
 		<LandingMain
@@ -61,11 +39,7 @@ const Landing = () => {
 			>
 				Kevin Li
 			</Heading>
-			<Heading
-				style={{ fontFamily: font, marginBottom: '3vh' }}
-				color={secondaryColor}
-				size="lg"
-			>
+			<Heading fontFamily={font} mb="3vh" color={secondaryColor} size="lg">
 				3B Computer Science @ UWaterloo
 			</Heading>
 			<Text color={tertiaryColor} fontSize="lg">
