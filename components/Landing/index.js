@@ -8,9 +8,10 @@ import {
 	useMediaQuery,
 	Link,
 	Text,
+	Box,
 } from '@chakra-ui/react';
 import { FaMoon, FaSun, FaLinkedin, FaGithub, FaFilePdf } from 'react-icons/fa';
-import { LandingMain, Row } from './styledItems';
+import { Row } from './styledItems';
 
 const Landing = () => {
 	const { colorMode, toggleColorMode } = useColorMode();
@@ -24,11 +25,23 @@ const Landing = () => {
 	const highlightColor = getColor('landingHighlight', colorMode);
 
 	return (
-		<LandingMain
-			font={font}
-			bgColor={bg}
+		<Box
+			mw="100vw"
+			mh="100vh"
+			w="100vw"
+			h="100vh"
+			backgroundColor={bg}
 			color={color}
-			bgImage={isLargerThan1024 ? '/bg.png' : ''}
+			d="flex"
+			flexDir="column"
+			justifyContent="center"
+			alignItems="center"
+			textAlign="center"
+			fontFamily={font}
+			bgImage={isLargerThan1024 ? "url('/bg.png')" : ''}
+			bgSize="cover"
+			bgRepeat="no-repeat"
+			zIndex="10"
 		>
 			<Text color={highlightColor} fontSize="lg">
 				Hey, I'm
@@ -80,7 +93,7 @@ const Landing = () => {
 			>
 				{colorMode === 'light' ? <FaMoon /> : <FaSun />}
 			</Button>
-		</LandingMain>
+		</Box>
 	);
 };
 
