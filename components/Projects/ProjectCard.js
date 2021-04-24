@@ -18,15 +18,22 @@ const ProjectCard = ({ name, image, link, state, tech, description }) => {
 	const font = useColorModeValue(lightColors.font, darkColors.font);
 
 	return (
-		<Box
-			maxW="sm"
+		<Link
+			href={link}
+			target="_blank"
 			minH="100%"
-			borderWidth="2px"
-			borderRadius="lg"
-			overflow="hidden"
-			_hover={{ boxShadow: '0 0 11px rgba(33,33,33,.2)' }}
+			d="flex"
+			flexDir="column"
+			style={{ textDecoration: 'none' }}
 		>
-			<Link href={link} target="_blank" style={{ textDecoration: 'none' }}>
+			<Box
+				maxW="sm"
+				flex="1"
+				borderWidth="2px"
+				borderRadius="lg"
+				overflow="hidden"
+				_hover={{ boxShadow: 'outline' }}
+			>
 				<Image boxSize="sm" src={image} alt="some image" />
 				<Box p="6">
 					<Box d="flex" alignItems="baseline">
@@ -47,10 +54,10 @@ const ProjectCard = ({ name, image, link, state, tech, description }) => {
 					<Box fontFamily={font} color={tertiaryColor} mb="10px">
 						{tech}
 					</Box>
-					<Box>{description}</Box>
+					<Box mh="100%">{description}</Box>
 				</Box>
-			</Link>
-		</Box>
+			</Box>
+		</Link>
 	);
 };
 

@@ -54,6 +54,15 @@ export const PROJECTS = [
 			'A desktop application tool to assist with the pains of online school. Comes equipt with a kanban board and an automated playback speed controller that automatically checks for pauses in video lectures and fast forwards it for you!',
 	},
 	{
+		name: 'Portfolio Website',
+		image: '/portfolio.JPG',
+		link: 'https://www.kevin-li.tech/',
+		state: '2021',
+		tech: 'React and Chakra UI',
+		description:
+			'The website you see before you - designed and styled using Chakra UI and Styled Components',
+	},
+	{
 		name: 'Hand Sign Ninjutsu Simulator',
 		image: 'https://kevinli23.github.io/me/static/media/image5.4b804766.jpg',
 		link:
