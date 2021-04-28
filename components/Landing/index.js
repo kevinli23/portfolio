@@ -74,7 +74,7 @@ const Landing = () => {
 						<FaGithub size="3em" />
 					</Link>
 					<Link
-						href="https://drive.google.com/file/d/1vlJ6Kgt81QMW2h6p1ko9OrkEwb6SdVtI/view?usp=sharing"
+						href="https://drive.google.com/file/d/1FrYJQ0phN6fsVeWXSGkt6QZwLXkSPEGB/view?usp=sharing"
 						target="_blank"
 					>
 						<FaFilePdf size="3em" />
