@@ -45,7 +45,7 @@ const About = () => {
 					<ListItem>Discover new random technologies to experiment with</ListItem>
 					<ListItem>Following crypto (Dogecoin 💎🙌)</ListItem>
 					<ListItem>
-						Playing video games (League of Legends, Pokemon, Minecraft to name a few)
+						Playing video games (League of Legends, TFT, Minecraft to name a few)
 					</ListItem>
 				</UnorderedList>
 			</Container>

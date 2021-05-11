@@ -6,7 +6,7 @@ export const EXPERIENCE = [
 		items: [
 			'Developed new features, expanded units tests and fixed bugs using React, Node.js, MongoDB and GraphQL',
 			'Reduced start-up load times by 11% by employing code-splitting and removing redundant dependencies',
-			'Implemented SSO and session management using Azure Active Directory, enabling persistent user settings and storage, a better experience transitioning from other internal applications and integration of per-user analytics',
+			'Implemented SSO and session management using Azure Active Directory; resulted in persistent user settings and storage, better user experience transitioning from other internal applications and integration of per-user analytics',
 			'Converted a suite of smoke tests from JUnit to Artillery which were integrated into the Jenkins pipeline',
 		],
 		image: '/manulife.png',
@@ -17,7 +17,7 @@ export const EXPERIENCE = [
 		title: 'Data Scientist',
 		items: [
 			'Designed  a regression model that accurately estimated the original volume given an aggregated volume and various features',
-			'Utilized Phased and Time LSTMs with Keras to develop predictive models with time series data',
+			'Made an interactive application using React and Highcharts to showcase the results of my research on Time/Phased LSTMs',
 			'Programmed scripts using Pandas and Numpy that created simulated test data based on real data; this provided a testing benchmark for model creation, hyperparameter optimization and testing algorithm limitations',
 		],
 		image: '/odaia.png',
