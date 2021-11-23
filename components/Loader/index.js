@@ -38,7 +38,7 @@ const Loader = ({ onFinish }) => {
 			})
 			.add({
 				targets: '#pokeball',
-				duration: 10,
+				duration: 5,
 				easing: 'easeInOutQuart',
 				opacity: 0,
 				scale: 0.1,

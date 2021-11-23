@@ -22,7 +22,6 @@ const Landing = () => {
 	const font = getColor('font', colorMode);
 	const secondaryColor = getColor('landingSecondaryTextColor', colorMode);
 	const tertiaryColor = getColor('landingTertiaryTextColor', colorMode);
-	const highlightColor = getColor('landingHighlight', colorMode);
 
 	return (
 		<Box
@@ -43,7 +42,7 @@ const Landing = () => {
 			bgRepeat="no-repeat"
 			zIndex="10"
 		>
-			<Text color={highlightColor} fontSize="lg">
+			<Text color={tertiaryColor} fontSize="lg">
 				Hey, I'm
 			</Text>
 			<Heading
@@ -58,29 +57,42 @@ const Landing = () => {
 			<Text color={tertiaryColor} fontSize="lg">
 				I enjoy building and breaking things
 			</Text>
-			{!isLargerThan1024 && (
-				<Row
-					style={{
-						margin: '30px',
-						justifyContent: 'space-between',
-						minWidth: '200px',
+			<Row
+				style={{
+					margin: '30px',
+					justifyContent: 'space-between',
+					minWidth: '200px',
+				}}
+			>
+				<Link
+					_hover={{
+						color: '#0072B1',
 					}}
+					href="https://www.linkedin.com/in/kevinli230/"
+					target="_blank"
 				>
-					<Link href="https://www.linkedin.com/in/kevinli230/" target="_blank">
-						<FaLinkedin size="3em" />
-					</Link>
+					<FaLinkedin size="3em" />
+				</Link>
 
-					<Link href="https://github.com/kevinli23" target="_blank">
-						<FaGithub size="3em" />
-					</Link>
-					<Link
-						href="https://drive.google.com/file/d/1FrYJQ0phN6fsVeWXSGkt6QZwLXkSPEGB/view?usp=sharing"
-						target="_blank"
-					>
-						<FaFilePdf size="3em" />
-					</Link>
-				</Row>
-			)}
+				<Link
+					_hover={{
+						color: 'purple',
+					}}
+					href="https://github.com/kevinli23"
+					target="_blank"
+				>
+					<FaGithub size="3em" />
+				</Link>
+				<Link
+					_hover={{
+						color: 'red',
+					}}
+					href="https://drive.google.com/file/d/1FrYJQ0phN6fsVeWXSGkt6QZwLXkSPEGB/view?usp=sharing"
+					target="_blank"
+				>
+					<FaFilePdf size="3em" />
+				</Link>
+			</Row>
 			{isLargerThan1024 && <div style={{ minHeight: '20vh' }} />}
 			<Button
 				style={{

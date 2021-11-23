@@ -3,16 +3,15 @@ import {
 	Heading,
 	Divider,
 	Text,
-	List,
 	ListItem,
 	UnorderedList,
 	useColorMode,
+	Link,
 } from '@chakra-ui/react';
 import { Container } from './styledItems';
-import { FaReact } from 'react-icons/fa';
 import { getColor } from '../../utils/colors';
 
-const About = () => {
+const About = ({ data }) => {
 	const { colorMode } = useColorMode();
 	const secondaryColor = getColor('landingSecondaryTextColor', colorMode);
 	const font = getColor('font', colorMode);
@@ -30,10 +29,28 @@ const About = () => {
 				<Text mt="10px">
 					I am a fourth year Computer Science student at the University of Waterloo.
 					I enjoy architecting and designing solutions to problems - and of course,
-					programming them. I am actively looking to learn new technologies,
-					approaches or perspectives. programming them. I am currently looking for
-					Spring 2022 and Fall 2022 internships.
+					programming them.
 				</Text>
+				<Text mt="1px">
+					I am actively looking to learn new technologies, approaches or
+					perspectives. programming them. I am currently looking for Spring 2022 and
+					Fall 2022 internships.
+				</Text>
+				{data && (
+					<Text mt="10px">
+						I am also a proud donator of{' '}
+						<span style={{ fontWeight: 'bold' }}>{data ? data.count : 0}</span> grains
+						of rice.{' '}
+						<Link
+							target="_blank"
+							href="https://freerice.com/"
+							color="rgb(42,179,198)"
+						>
+							Learn More
+						</Link>
+						!
+					</Text>
+				)}
 			</Container>
 
 			<Container>
@@ -44,6 +61,8 @@ const About = () => {
 					<ListItem>Keeping up with the NBA</ListItem>
 					<ListItem>Discover new random technologies to experiment with</ListItem>
 					<ListItem>Following crypto (Banano 💎🙌)</ListItem>
+					<ListItem>Finding dull and mundane tasks to automate</ListItem>
+					<ListItem>Watching cooking and comedy shows</ListItem>
 				</UnorderedList>
 			</Container>
 
