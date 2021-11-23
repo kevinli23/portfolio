@@ -53,7 +53,7 @@ const Landing = () => {
 				Kevin Li
 			</Heading>
 			<Heading fontFamily={font} mb="3vh" color={secondaryColor} size="lg">
-				3B Computer Science @ UWaterloo
+				4A Computer Science @ UWaterloo
 			</Heading>
 			<Text color={tertiaryColor} fontSize="lg">
 				I enjoy building and breaking things

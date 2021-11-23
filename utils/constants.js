@@ -38,10 +38,19 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
 	{
+		name: 'BanBucket',
+		image: '/banbucket.jpg',
+		link: 'https://www.banbucket.ninja/',
+		state: '2021 - In Development',
+		tech: 'React and Golang',
+		description:
+			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano)',
+	},
+	{
 		name: 'Playbak',
 		image: 'https://playbak-team.github.io/static/media/landing1.3084bd84.JPG',
 		link: 'https://playbak-team.github.io/',
-		state: '2021 - In Development',
+		state: '2021',
 		tech: 'React and Electron',
 		description:
 			'A desktop application tool to assist with the pains of online school. Comes equipt with a kanban board and an automated playback speed controller that automatically checks for pauses in video lectures and fast forwards it for you!',

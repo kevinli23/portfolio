@@ -28,11 +28,11 @@ const About = () => {
 					An introduction to me
 				</Heading>
 				<Text mt="10px">
-					I am a third year Computer Science student at the University of Waterloo. I
-					enjoy architecting and designing solutions to problems - and of course,
+					I am a fourth year Computer Science student at the University of Waterloo.
+					I enjoy architecting and designing solutions to problems - and of course,
 					programming them. I am actively looking to learn new technologies,
 					approaches or perspectives. programming them. I am currently looking for
-					Fall 2021, Spring 2022 and Fall 2022 internships.
+					Spring 2022 and Fall 2022 internships.
 				</Text>
 			</Container>
 
@@ -43,10 +43,7 @@ const About = () => {
 				<UnorderedList pl="2%" mt="10px">
 					<ListItem>Keeping up with the NBA</ListItem>
 					<ListItem>Discover new random technologies to experiment with</ListItem>
-					<ListItem>Following crypto (Dogecoin 💎🙌)</ListItem>
-					<ListItem>
-						Playing video games (League of Legends, TFT, Minecraft to name a few)
-					</ListItem>
+					<ListItem>Following crypto (Banano 💎🙌)</ListItem>
 				</UnorderedList>
 			</Container>
 
@@ -56,16 +53,13 @@ const About = () => {
 				</Heading>
 				<UnorderedList pl="2%" mt="10px">
 					<ListItem>
-						Languages: Java, Python, C#, C++, JavaScript, TypeScript, MySQL
+						Languages: Golang, Python, Java, C#, C++, JavaScript, TypeScript, MySQL
 					</ListItem>
 					<ListItem>
-						Libraries/Frameworks: React, Redux, Node.js, GraphQL, Electron, Pandas,
-						Keras
+						Libraries/Frameworks: React, Redux, Node.js, GraphQL, Electron
 					</ListItem>
-					<ListItem>Tools/Other: Git, Gradle, Bash, MongoDB</ListItem>
-					<ListItem>
-						Learning/Interested: Golang, Deno, Redis, Reinforcement Learning
-					</ListItem>
+					<ListItem>Tools/Other: Git, Gradle, Bash, MongoDB, PostgreSQL</ListItem>
+					<ListItem>Learning/Interested: Deno, System Design</ListItem>
 				</UnorderedList>
 			</Container>
 		</>
