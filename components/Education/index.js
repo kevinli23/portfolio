@@ -24,10 +24,7 @@ const Education = () => {
 			<div style={{ minHeight: '30px' }} />
 			<Box>
 				<HStack spacing="20px">
-					<Image
-						boxSize="100px"
-						src="https://kevinli23.github.io/me/static/media/uw.2e8e91d2.png"
-					/>
+					<Image boxSize="100px" src="/uw.png" />
 					<VStack align="flex-start" spacing="1px">
 						<Heading size="lg">University of Waterloo</Heading>
 						<Text color={getColor('landingSecondaryTextColor', colorMode)}>
@@ -39,11 +36,15 @@ const Education = () => {
 					</VStack>
 				</HStack>
 				<UnorderedList mt="15px" ml="10%">
-					<ListItem>3.86 Cumulative GPA</ListItem>
-					<ListItem>88.78% Cumulative Average</ListItem>
+					<ListItem>3.88 Cumulative GPA</ListItem>
+					<ListItem>89.19% Cumulative Average</ListItem>
 					<ListItem>
 						Teaching Assistant for Algebra for Honours Mathematics from September 2019
 						to December 2019
+					</ListItem>
+					<ListItem>
+						Courses: Algorithms, Computer Networks, Operating Systems, Data
+						Structures, User Interfaces, Databases
 					</ListItem>
 				</UnorderedList>
 			</Box>

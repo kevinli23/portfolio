@@ -1,44 +1,37 @@
 export const EXPERIENCE = [
 	{
+		company: '1Password',
+		duration: 'Sep 2021 - Dec 2021',
+		title: 'Backend Developer',
+		items: [],
+		image: '/1pwd.png',
+	},
+	{
 		company: 'Manulife - Manulife Technology',
 		duration: 'Jan 2021 - Apr 2021',
-		title: 'Full Stack Engineer',
-		items: [
-			'Developed new features, expanded units tests and fixed bugs using React, Node.js, MongoDB and GraphQL',
-			'Reduced start-up load times by 11% by employing code-splitting and removing redundant dependencies',
-			'Implemented SSO and session management using Azure Active Directory; resulted in persistent user settings and storage, better user experience transitioning from other internal applications and integration of per-user analytics',
-			'Converted a suite of smoke tests from JUnit to Artillery which were integrated into the Jenkins pipeline',
-		],
+		title: 'Full Stack Developer',
+		items: [],
 		image: '/manulife.png',
 	},
 	{
 		company: 'ODAIA Intelligence',
 		duration: 'May 2020 - Aug 2020',
-		title: 'Data Scientist',
-		items: [
-			'Designed  a regression model that accurately estimated the original volume given an aggregated volume and various features',
-			'Made an interactive application using React and Highcharts to showcase the results of my research on Time/Phased LSTMs',
-			'Programmed scripts using Pandas and Numpy that created simulated test data based on real data; this provided a testing benchmark for model creation, hyperparameter optimization and testing algorithm limitations',
-		],
+		title: 'Software Developer & Data Scientist',
+		items: [],
 		image: '/odaia.png',
 	},
 	{
 		company: 'Intelex Technologies',
 		duration: 'May 2019 - Aug 2019',
 		title: 'Software Developer',
-		items: [
-			'Assisted in the development of a framework for storing geolocations using C#; prototyped in a SPA using React',
-			'Worked in two-week sprints with React, JavaScript, C# and SQL to fix urgent platform defects and refactor legacy code',
-		],
+		items: [],
 		image: '/intelex.png',
 	},
 	{
 		company: 'Toronto District School Board',
 		duration: 'Jul 2018',
 		title: 'Robotics Mentor',
-		items: [
-			'Taught students’ the fundamentals of programming with an application heavy curriculum using Blockly, Dash and Dot',
-		],
+		items: [],
 		image: '/tdsb.png',
 	},
 ];
@@ -74,7 +67,7 @@ export const PROJECTS = [
 	},
 	{
 		name: 'Hand Sign Ninjutsu Simulator',
-		image: 'https://kevinli23.github.io/me/static/media/image5.4b804766.jpg',
+		image: '/naruto.jpg',
 		link:
 			'https://devpost.com/software/ar-voice-control-and-ml-hand-sign-ninjutsu-battle-simulator',
 		state: 'HTN 2019',
@@ -84,8 +77,7 @@ export const PROJECTS = [
 	},
 	{
 		name: 'World Archives',
-		image:
-			'https://kevinli23.github.io/me/static/media/globalarchives.3b64ba77.png',
+		image: '/arch.jpg',
 		link: 'https://github.com/kevinli23/worldarchives',
 		state: '2019',
 		tech: 'React and Firebase',
