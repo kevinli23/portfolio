@@ -39,7 +39,7 @@ export const EXPERIENCE = [
 export const PROJECTS = [
 	{
 		name: 'BanBucket',
-		image: '/banbucket.jpg',
+		image: '/banbucket.JPG',
 		link: 'https://www.banbucket.ninja/',
 		state: '2021 - In Development',
 		tech: 'React and Golang',
