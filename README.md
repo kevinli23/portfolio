@@ -1,1 +1,1 @@
-[Portfolio website](kevin-li.tech) built with Next.js and Chakra UI
+[Portfolio website](https://www.kevin-li.tech/) built with Next.js and Chakra UI
