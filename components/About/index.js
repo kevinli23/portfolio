@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
 	Heading,
 	Divider,
@@ -11,10 +11,19 @@ import {
 import { Container } from './styledItems';
 import { getColor } from '../../utils/colors';
 
-const About = ({ data }) => {
+const About = () => {
 	const { colorMode } = useColorMode();
 	const secondaryColor = getColor('landingSecondaryTextColor', colorMode);
 	const font = getColor('font', colorMode);
+	const [count, setCount] = useState(0);
+
+	useEffect(() => {
+		(async () => {
+			const res = await fetch(`https://www.kevin-li.tech/api/rice`);
+			const data = await res.json();
+			setCount(data.count);
+		})();
+	}, []);
 
 	return (
 		<>
@@ -36,11 +45,10 @@ const About = ({ data }) => {
 					perspectives. programming them. I am currently looking for Spring 2022 and
 					Fall 2022 internships.
 				</Text>
-				{data && (
+				{count && (
 					<Text mt="10px">
 						I am also a proud donator of{' '}
-						<span style={{ fontWeight: 'bold' }}>{data ? data.count : 0}</span> grains
-						of rice.{' '}
+						<span style={{ fontWeight: 'bold' }}>{count}</span> grains of rice.{' '}
 						<Link
 							target="_blank"
 							href="https://freerice.com/"

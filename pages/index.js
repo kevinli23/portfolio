@@ -5,7 +5,7 @@ import Landing from '../components/Landing';
 import Body from '../components/Body';
 import { useState } from 'react';
 
-export default function Home({ data }) {
+export default function Home() {
 	const [loading, setLoading] = useState(true);
 	return (
 		<div className={styles.container}>
@@ -18,24 +18,9 @@ export default function Home({ data }) {
 			) : (
 				<>
 					<Landing />
-					<Body data={data} />
+					<Body />
 				</>
 			)}
 		</div>
 	);
-}
-
-export async function getStaticProps() {
-	const res = await fetch(`https://www.kevin-li.tech/api/rice`);
-	const data = await res.json();
-
-	if (!data) {
-		return {
-			notFound: true,
-		};
-	}
-
-	return {
-		props: { data }, // will be passed to the page component as props
-	};
 }

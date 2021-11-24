@@ -44,7 +44,7 @@ export const PROJECTS = [
 		state: '2021 - In Development',
 		tech: 'React and Golang',
 		description:
-			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano)',
+			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano) with over 7000 total claims so far.',
 	},
 	{
 		name: 'Playbak',
