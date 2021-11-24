@@ -25,19 +25,17 @@ export default function Home({ data }) {
 	);
 }
 
-// export async function getStaticProps() {
-// 	const res = await fetch(
-// 		`https://engine.freerice.com/users/ab8381f7-d80e-4092-af9a-722907e7f989?_format=json`
-// 	);
-// 	const data = await res.json();
+export async function getStaticProps() {
+	const res = await fetch(`https://www.kevin-li.tech/api/rice`);
+	const data = await res.json();
 
-// 	if (!data) {
-// 		return {
-// 			notFound: true,
-// 		};
-// 	}
+	if (!data) {
+		return {
+			notFound: true,
+		};
+	}
 
-// 	return {
-// 		props: { data }, // will be passed to the page component as props
-// 	};
-// }
+	return {
+		props: { data }, // will be passed to the page component as props
+	};
+}

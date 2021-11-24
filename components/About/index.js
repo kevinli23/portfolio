@@ -15,6 +15,7 @@ const About = ({ data }) => {
 	const { colorMode } = useColorMode();
 	const secondaryColor = getColor('landingSecondaryTextColor', colorMode);
 	const font = getColor('font', colorMode);
+
 	return (
 		<>
 			<Heading size="2xl" mb="10px">
@@ -35,10 +36,10 @@ const About = ({ data }) => {
 					perspectives. programming them. I am currently looking for Spring 2022 and
 					Fall 2022 internships.
 				</Text>
-				{data && data.attributes && data.attributes.rice && (
+				{data && (
 					<Text mt="10px">
 						I am also a proud donator of{' '}
-						<span style={{ fontWeight: 'bold' }}>{data.attributes.rice}</span> grains
+						<span style={{ fontWeight: 'bold' }}>{data ? data.count : 0}</span> grains
 						of rice.{' '}
 						<Link
 							target="_blank"
