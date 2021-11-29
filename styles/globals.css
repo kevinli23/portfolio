@@ -21,6 +21,14 @@ a {
 	box-sizing: border-box;
 }
 
+.fa-linkedin-in:hover {
+	color: #0072b1;
+}
+
+.fa-github-alt:hover {
+	color: rgb(92, 0, 92);
+}
+
 @font-face {
 	font-family: 'Calibre';
 	src: url('/fonts/Calibre/Calibre-Regular.woff2') format('woff2'),

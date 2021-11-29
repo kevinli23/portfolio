@@ -121,3 +121,12 @@
 		flex-direction: column;
 	}
 }
+
+.blueicon {
+	color: 'black';
+}
+
+.blueicon::hover {
+	color: '#0072b1';
+	margin-bottom: '20px';
+}

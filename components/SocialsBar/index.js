@@ -1,43 +1,27 @@
 import React from 'react';
-import { IconButton, Link, useColorModeValue } from '@chakra-ui/react';
+import { IconButton, Link, Icon } from '@chakra-ui/react';
 import { Container, Line } from './styledItems';
-import { FaLinkedin, FaGithub, FaFilePdf } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
 const SocialsBar = () => {
-	const lineColor = useColorModeValue('black', 'white');
 	return (
 		<Container>
 			<Link href="https://www.linkedin.com/in/kevinli230/" target="_blank">
 				<IconButton
-					style={{ marginBottom: '10px' }}
-					icon={<FaLinkedin />}
-					fontSize="2em"
-					colorScheme="black"
-					variant="outline"
+					style={{ marginBottom: '20px' }}
+					icon={<FontAwesomeIcon icon={faLinkedinIn} />}
+					size="xs"
 				/>
 			</Link>
 			<Link href="https://github.com/kevinli23" target="_blank">
 				<IconButton
 					style={{ marginBottom: '10px' }}
-					icon={<FaGithub />}
-					fontSize="2em"
-					colorScheme="black"
-					variant="outline"
+					icon={<FontAwesomeIcon icon={faGithubAlt} />}
+					size="xs"
 				/>
 			</Link>
-			<Link
-				href="https://drive.google.com/file/d/1FrYJQ0phN6fsVeWXSGkt6QZwLXkSPEGB/view?usp=sharing"
-				target="_blank"
-			>
-				<IconButton
-					style={{ marginBottom: '10px' }}
-					icon={<FaFilePdf />}
-					fontSize="2em"
-					colorScheme="black"
-					variant="outline"
-				/>
-			</Link>
-			<Line height="70" color={lineColor} />
+			<Line height="70" color="black" />
 		</Container>
 	);
 };
