@@ -5,16 +5,15 @@ import {
 	Text,
 	ListItem,
 	UnorderedList,
-	useColorMode,
 	Link,
 } from '@chakra-ui/react';
-import { Container } from './styledItems';
+import { Container, StyledLink } from './styledItems';
 import { getColor } from '../../utils/colors';
 
 const About = () => {
-	const { colorMode } = useColorMode();
-	const secondaryColor = getColor('landingSecondaryTextColor', colorMode);
-	const font = getColor('font', colorMode);
+	const secondaryColor = getColor('landingSecondaryTextColor', 'light');
+	const font = getColor('font', 'light');
+	const bg = getColor('landingBGColor', 'light');
 	const [count, setCount] = useState(0);
 
 	useEffect(() => {
@@ -27,58 +26,56 @@ const About = () => {
 
 	return (
 		<>
-			<Heading size="2xl" mb="10px">
+			<Heading size="2xl" fontFamily={'Calibre'}>
 				About
 			</Heading>
 			<Divider />
 			<Container>
-				<Heading fontFamily={font} color={secondaryColor} size="md">
+				<Heading fontFamily={'Calibre'} color={secondaryColor} size="lg">
 					An introduction to me
 				</Heading>
-				<Text mt="10px">
+				<Text mt="10px" fontFamily={'Calibre'} fontSize="20px">
 					I am a fourth year Computer Science student at the University of Waterloo.
-					I enjoy architecting and designing solutions to problems - and of course,
+					I enjoy architecting and designing solutions to problems, and of course,
 					programming them.
 				</Text>
-				<Text mt="1px">
-					I am actively looking to learn new technologies, approaches or
-					perspectives. programming them. I am currently looking for Spring 2022 and
-					Fall 2022 internships.
+				<Text mt="10px" fontFamily={'Calibre'} fontSize="20px">
+					I am currently looking for Spring 2022 and Fall 2022 internships.
 				</Text>
 				{count && (
-					<Text mt="10px">
+					<Text mt="10px" fontFamily={'Calibre'} fontSize="20px">
 						I am also a proud donator of{' '}
 						<span style={{ fontWeight: 'bold' }}>{count}</span> grains of rice.{' '}
-						<Link
+						<StyledLink
 							target="_blank"
 							href="https://freerice.com/"
-							color="rgb(42,179,198)"
+							inputColor="rgb(42,179,198)"
 						>
 							Learn More
-						</Link>
-						!
+						</StyledLink>
 					</Text>
 				)}
 			</Container>
 
 			<Container>
-				<Heading fontFamily={font} color={secondaryColor} size="md">
+				<Heading fontFamily={'Calibre'} size="lg" color={secondaryColor}>
 					During my spare time I enjoy
 				</Heading>
-				<UnorderedList pl="2%" mt="10px">
+				<UnorderedList pl="2%" mt="10px" fontFamily={'Calibre'} fontSize="20px">
 					<ListItem>Keeping up with the NBA</ListItem>
 					<ListItem>Discover new random technologies to experiment with</ListItem>
-					<ListItem>Following crypto (Banano 💎🙌)</ListItem>
+					<ListItem>Following crypto (Banano + Nano 🙌)</ListItem>
 					<ListItem>Finding dull and mundane tasks to automate</ListItem>
 					<ListItem>Watching cooking and comedy shows</ListItem>
+					<ListItem>Playing TFT</ListItem>
 				</UnorderedList>
 			</Container>
 
 			<Container>
-				<Heading fontFamily={font} color={secondaryColor} size="md">
+				<Heading fontFamily={'Calibre'} color={secondaryColor} size="lg">
 					Technologies
 				</Heading>
-				<UnorderedList pl="2%" mt="10px">
+				<UnorderedList pl="2%" mt="10px" fontFamily={'Calibre'} fontSize="20px">
 					<ListItem>
 						Languages: Golang, Python, Java, C#, C++, JavaScript, TypeScript, MySQL
 					</ListItem>

@@ -31,6 +31,7 @@ const ProjectCard = ({ name, image, link, state, tech, description }) => {
 				flex="1"
 				borderWidth="2px"
 				borderRadius="lg"
+				borderColor="#c4cace"
 				overflow="hidden"
 				_hover={{ boxShadow: 'outline' }}
 			>
@@ -43,15 +44,16 @@ const ProjectCard = ({ name, image, link, state, tech, description }) => {
 					</Box>
 					<Box
 						mt="1"
-						fontFamily={font}
+						fontFamily="Calibre"
 						fontWeight="semibold"
 						as="h3"
 						lineHeight="tight"
-						fontSize="20px"
+						fontSize="25px"
+						mb="-5px"
 					>
 						{name}
 					</Box>
-					<Box fontFamily={font} color={tertiaryColor} mb="10px">
+					<Box fontFamily="Calibre" color={tertiaryColor} mb="10px">
 						{tech}
 					</Box>
 					<Box mh="100%">{description}</Box>

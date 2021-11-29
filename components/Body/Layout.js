@@ -10,12 +10,12 @@ const Layout = ({ left, main }) => {
 		<>
 			{isLargerThan1024 ? (
 				<>
-					<Grid h="min-content" w="100vw" templateColumns="repeat(8, 1fr)">
-						<GridItem colSpan={1}>{left}</GridItem>
-						<GridItem colSpan={6}>
+					<Grid h="min-content" w="100vw" templateColumns="repeat(9, 1fr)">
+						<GridItem colSpan={2}>{left}</GridItem>
+						<GridItem colSpan={5}>
 							<LayoutMain>{main}</LayoutMain>
 						</GridItem>
-						<GridItem colSpan={1} />
+						<GridItem colSpan={2} />
 					</Grid>
 				</>
 			) : (

@@ -7,14 +7,12 @@ import {
 	VStack,
 	HStack,
 	Text,
-	useColorMode,
 	UnorderedList,
 	ListItem,
 } from '@chakra-ui/react';
 import { getColor } from '../../utils/colors';
 
 const Education = () => {
-	const { colorMode } = useColorMode();
 	return (
 		<>
 			<Heading size="2xl" mb="10px" mt="3%">
@@ -22,20 +20,25 @@ const Education = () => {
 			</Heading>
 			<Divider />
 			<div style={{ minHeight: '30px' }} />
-			<Box>
+			<Box fontFamily="Calibre">
 				<HStack spacing="20px">
-					<Image boxSize="100px" src="/uw.png" />
 					<VStack align="flex-start" spacing="1px">
 						<Heading size="lg">University of Waterloo</Heading>
-						<Text color={getColor('landingSecondaryTextColor', colorMode)}>
+						<Text
+							fontSize="20px"
+							color={getColor('landingSecondaryTextColor', 'light')}
+						>
 							Honours Bachelor of Computer Science
 						</Text>
-						<Text color={getColor('landingTertiaryTextColor', colorMode)}>
+						<Text
+							color={getColor('landingTertiaryTextColor', 'light')}
+							fontSize="20px"
+						>
 							Sep 2018 - Apr 2023
 						</Text>
 					</VStack>
 				</HStack>
-				<UnorderedList mt="15px" ml="10%">
+				<UnorderedList mt="15px" fontSize="20px">
 					<ListItem>3.88 Cumulative GPA</ListItem>
 					<ListItem>89.19% Cumulative Average</ListItem>
 					<ListItem>

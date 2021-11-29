@@ -38,7 +38,7 @@ const Loader = ({ onFinish }) => {
 			})
 			.add({
 				targets: '#pokeball',
-				duration: 5,
+				duration: 300,
 				easing: 'easeInOutQuart',
 				opacity: 0,
 				scale: 0.1,
@@ -50,7 +50,7 @@ const Loader = ({ onFinish }) => {
 	}, []);
 
 	return (
-		<div className="loader">
+		<div className={'loader'}>
 			<PokeballIcon />
 		</div>
 	);

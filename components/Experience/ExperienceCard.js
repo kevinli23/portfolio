@@ -1,7 +1,6 @@
 import React from 'react';
 import {
 	Box,
-	Img,
 	Text,
 	Heading,
 	UnorderedList,
@@ -10,35 +9,27 @@ import {
 	useMediaQuery,
 	useColorMode,
 } from '@chakra-ui/react';
-import { Row, Column } from './styledItems';
-import { getColor } from '../../utils/colors';
+import { Row, Column, StyledLink } from './styledItems';
 
-const ExperienceCard = ({ company, duration, title, items, image }) => {
+const ExperienceCard = ({ company, duration, title, items, link }) => {
 	const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)');
-	const { colorMode } = useColorMode();
-	const tertiaryColor = getColor('landingTertiaryTextColor', colorMode);
-	const font = getColor('font', colorMode);
 
 	return (
-		<Box overflow="hidden" borderRadius="lg" maxW="90%">
+		<Box overflow="hidden" borderRadius="lg" maxW="100%" fontFamily="Calibre">
 			<Column style={{ margin: '20px' }}>
 				<Row style={{ alignItems: 'center' }}>
-					<Img
-						style={{ marginRight: '15px' }}
-						src={image}
-						boxSize={isLargerThan1024 ? '50px' : '40px'}
-					/>
 					<Column>
-						<Heading fontFamily={font} size="md">
-							{title}
+						<Heading fontFamily="Calibre" size="md">
+							{title}{' '}
+							<StyledLink inputColor="rgb(42, 179, 198)" target="_blank" href={link}>
+								@ {company}
+							</StyledLink>
 						</Heading>
-						<Text fontFamily={font} color={tertiaryColor}>
-							{company}
-						</Text>
 					</Column>
 					<Spacer />
 					{isLargerThan1024 && <Text>{duration}</Text>}
 				</Row>
+				{!isLargerThan1024 && <Text>{duration}</Text>}
 				<UnorderedList
 					spacing="1.5"
 					style={{ paddingLeft: '2%', marginTop: '10px' }}

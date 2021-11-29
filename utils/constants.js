@@ -2,37 +2,37 @@ export const EXPERIENCE = [
 	{
 		company: '1Password',
 		duration: 'Sep 2021 - Dec 2021',
-		title: 'Backend Developer',
+		title: 'Backend Developer Coop',
 		items: [],
-		image: '/1pwd.png',
+		link: 'https://1password.com/',
 	},
 	{
-		company: 'Manulife - Manulife Technology',
+		company: 'Manulife',
 		duration: 'Jan 2021 - Apr 2021',
-		title: 'Full Stack Developer',
+		title: 'Full Stack Developer Coop',
 		items: [],
-		image: '/manulife.png',
+		link: 'https://www.manulife.ca/personal.html',
 	},
 	{
 		company: 'ODAIA Intelligence',
 		duration: 'May 2020 - Aug 2020',
-		title: 'Software Developer & Data Scientist',
+		title: 'Software Developer & Data Scientist Coop',
 		items: [],
-		image: '/odaia.png',
+		link: 'https://www.odaia.ai/',
 	},
 	{
 		company: 'Intelex Technologies',
 		duration: 'May 2019 - Aug 2019',
-		title: 'Software Developer',
+		title: 'Software Developer Coop',
 		items: [],
-		image: '/intelex.png',
+		link: 'https://www.intelex.com/',
 	},
 	{
 		company: 'Toronto District School Board',
 		duration: 'Jul 2018',
 		title: 'Robotics Mentor',
 		items: [],
-		image: '/tdsb.png',
+		link: 'https://www.tdsb.on.ca/',
 	},
 ];
 
@@ -42,9 +42,9 @@ export const PROJECTS = [
 		image: '/banbucket.JPG',
 		link: 'https://www.banbucket.ninja/',
 		state: '2021 - In Development',
-		tech: 'React and Golang',
+		tech: 'React, Golang, Firebase, MongoDB',
 		description:
-			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano) with over 7000 total claims so far.',
+			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano) with over 8000 total claims.',
 	},
 	{
 		name: 'Playbak',
@@ -61,7 +61,7 @@ export const PROJECTS = [
 			'https://user-images.githubusercontent.com/42505833/116331017-d11ce280-a79c-11eb-9b89-401db9a9d5af.png',
 		link: 'https://fall2021-shopify-frontend-challenge.vercel.app/',
 		state: '2021',
-		tech: 'React and Chakra UI',
+		tech: 'React',
 		description:
 			"A web application to nominate movies from the OMDB API - a project done as a challenge for Shopify's frontend internship application. ",
 	},
@@ -70,7 +70,7 @@ export const PROJECTS = [
 		image: '/portfolio.JPG',
 		link: 'https://github.com/kevinli23/portfolio',
 		state: '2021',
-		tech: 'React and Chakra UI',
+		tech: 'React',
 		description:
 			'The website you see before you - designed and styled using Chakra UI and Styled Components',
 	},
@@ -80,7 +80,7 @@ export const PROJECTS = [
 		link:
 			'https://devpost.com/software/ar-voice-control-and-ml-hand-sign-ninjutsu-battle-simulator',
 		state: 'HTN 2019',
-		tech: 'Python and React',
+		tech: 'Python, React, Keras, Flask',
 		description:
 			'Built at Hack the North 2019, where our team used handsign recognition and our voices to simulate ninjutsu from the anime Naruto in a one versus one AR battle',
 	},
@@ -89,7 +89,7 @@ export const PROJECTS = [
 		image: '/arch.jpg',
 		link: 'https://github.com/kevinli23/worldarchives',
 		state: '2019',
-		tech: 'React and Firebase',
+		tech: 'React, Firebase, GCP',
 		description:
 			'A Pub/Sub data aggregation service that archives news data in real-time according to client subscriptions. Implemented content classification and sentiment analysis with GCP. Displayed with a React frontend.',
 	},
