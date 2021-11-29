@@ -17,9 +17,5 @@ export const darkColors = {
 };
 
 export function getColor(item, mode) {
-	if (mode === 'light') {
-		return lightColors[item];
-	}
-
-	return darkColors[item];
+	return lightColors[item];
 }
