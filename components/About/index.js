@@ -1,19 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import {
-	Heading,
-	Divider,
-	Text,
-	ListItem,
-	UnorderedList,
-	Link,
-} from '@chakra-ui/react';
+import { Heading, Box, Text, ListItem, UnorderedList } from '@chakra-ui/react';
 import { Container, StyledLink } from './styledItems';
 import { getColor } from '../../utils/colors';
 
 const About = () => {
 	const secondaryColor = getColor('landingSecondaryTextColor', 'light');
-	const font = getColor('font', 'light');
-	const bg = getColor('landingBGColor', 'light');
 	const [count, setCount] = useState(0);
 
 	useEffect(() => {
@@ -29,7 +20,11 @@ const About = () => {
 			<Heading size="2xl" fontFamily={'Calibre'}>
 				About
 			</Heading>
-			<Divider />
+			<Box
+				style={{
+					borderTop: '1px solid black',
+				}}
+			/>
 			<Container>
 				<Heading fontFamily={'Calibre'} color={secondaryColor} size="lg">
 					An introduction to me
@@ -73,17 +68,12 @@ const About = () => {
 
 			<Container>
 				<Heading fontFamily={'Calibre'} color={secondaryColor} size="lg">
-					Technologies
+					Technologies I'm currently using
 				</Heading>
 				<UnorderedList pl="2%" mt="10px" fontFamily={'Calibre'} fontSize="20px">
-					<ListItem>
-						Languages: Golang, Python, Java, C#, C++, JavaScript, TypeScript, MySQL
-					</ListItem>
-					<ListItem>
-						Libraries/Frameworks: React, Redux, Node.js, GraphQL, Electron
-					</ListItem>
-					<ListItem>Tools/Other: Git, Gradle, Bash, MongoDB, PostgreSQL</ListItem>
-					<ListItem>Learning/Interested: Deno, System Design</ListItem>
+					<ListItem>Golang, Python, Java, JavaScript, TypeScript, MySQL</ListItem>
+					<ListItem>React, Node.js</ListItem>
+					<ListItem>Git, Gradle, Bash, MongoDB, PostgreSQL</ListItem>
 				</UnorderedList>
 			</Container>
 		</>

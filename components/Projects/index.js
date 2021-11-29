@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, Divider, Wrap, WrapItem, Box } from '@chakra-ui/react';
+import { Heading, Wrap, WrapItem, Box } from '@chakra-ui/react';
 import { PROJECTS } from '../../utils/constants';
 import ProjectCard from './ProjectCard';
 
@@ -9,7 +9,11 @@ const Projects = () => {
 			<Heading size="2xl" style={{ marginBottom: '10px', marginTop: '3%' }}>
 				Projects
 			</Heading>
-			<Divider />
+			<Box
+				style={{
+					borderTop: '1px solid black',
+				}}
+			/>
 			<div style={{ minHeight: '30px' }} />
 			<Wrap spacing="50px" justify="center">
 				{PROJECTS.map((project) => (

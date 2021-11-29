@@ -1,22 +1,8 @@
 import React from 'react';
-import {
-	Box,
-	Image,
-	Badge,
-	useColorModeValue,
-	Link,
-	Text,
-} from '@chakra-ui/react';
+import { Box, Image, Badge, Link } from '@chakra-ui/react';
 import { lightColors, darkColors } from '../../utils/colors';
 
 const ProjectCard = ({ name, image, link, state, tech, description }) => {
-	const tertiaryColor = useColorModeValue(
-		lightColors.landingTertiaryTextColor,
-		darkColors.landingTertiaryTextColor
-	);
-
-	const font = useColorModeValue(lightColors.font, darkColors.font);
-
 	return (
 		<Link
 			href={link}
@@ -38,7 +24,11 @@ const ProjectCard = ({ name, image, link, state, tech, description }) => {
 				<Image boxSize="sm" src={image} alt="some image" />
 				<Box p="6">
 					<Box d="flex" alignItems="baseline">
-						<Badge borderRadius="full" px="2" colorScheme="teal">
+						<Badge
+							borderRadius="full"
+							px="2"
+							backgroundColor={lightColors.landingTertiaryTextColor}
+						>
 							{state}
 						</Badge>
 					</Box>
@@ -53,7 +43,11 @@ const ProjectCard = ({ name, image, link, state, tech, description }) => {
 					>
 						{name}
 					</Box>
-					<Box fontFamily="Calibre" color={tertiaryColor} mb="10px">
+					<Box
+						fontFamily="Calibre"
+						color={darkColors.landingTertiaryTextColor}
+						mb="10px"
+					>
 						{tech}
 					</Box>
 					<Box mh="100%">{description}</Box>

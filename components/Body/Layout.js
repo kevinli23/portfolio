@@ -10,7 +10,13 @@ const Layout = ({ left, main }) => {
 		<>
 			{isLargerThan1024 ? (
 				<>
-					<Grid h="min-content" w="100vw" templateColumns="repeat(9, 1fr)">
+					<Grid
+						h="min-content"
+						w="100vw"
+						templateColumns="repeat(9, 1fr)"
+						backgroundColor="#f5f5f5"
+						color="black"
+					>
 						<GridItem colSpan={2}>{left}</GridItem>
 						<GridItem colSpan={5}>
 							<LayoutMain>{main}</LayoutMain>

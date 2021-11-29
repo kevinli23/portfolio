@@ -1,9 +1,7 @@
 import React from 'react';
 import {
 	Heading,
-	Divider,
 	Box,
-	Image,
 	VStack,
 	HStack,
 	Text,
@@ -18,7 +16,11 @@ const Education = () => {
 			<Heading size="2xl" mb="10px" mt="3%">
 				Education
 			</Heading>
-			<Divider />
+			<Box
+				style={{
+					borderTop: '1px solid black',
+				}}
+			/>
 			<div style={{ minHeight: '30px' }} />
 			<Box fontFamily="Calibre">
 				<HStack spacing="20px">
