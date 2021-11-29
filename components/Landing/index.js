@@ -1,9 +1,19 @@
 import React from 'react';
 import { getColor } from '../../utils/colors';
-import { Heading, useMediaQuery, Text, Box } from '@chakra-ui/react';
+import {
+	Heading,
+	useMediaQuery,
+	Text,
+	Box,
+	Button,
+	useDisclosure,
+} from '@chakra-ui/react';
+
+import ResumeModal from '../ResumeModal';
 
 const Landing = () => {
 	const [isLargerThan1024] = useMediaQuery('(min-width: 1024px)');
+	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	const bg = getColor('landingBGColor', 'light');
 	const color = getColor('landingTextColor', 'light');
@@ -28,6 +38,18 @@ const Landing = () => {
 			bgRepeat="no-repeat"
 			zIndex="10"
 		>
+			<Button
+				position="absolute"
+				right="2%"
+				top="1%"
+				variant="solid"
+				colorScheme="blue"
+				fontFamily="SF Mono"
+				fontWeight="bold"
+				onClick={onOpen}
+			>
+				Resume
+			</Button>
 			<Box
 				d="flex"
 				flexDir="column"
@@ -53,6 +75,7 @@ const Landing = () => {
 					software!
 				</Text>
 			</Box>
+			<ResumeModal isOpen={isOpen} onClose={onClose} />
 		</Box>
 	);
 };
