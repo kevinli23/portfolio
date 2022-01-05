@@ -28,6 +28,7 @@ const ProjectCard = ({ name, image, link, state, tech, description }) => {
 							borderRadius="full"
 							px="2"
 							backgroundColor={lightColors.landingTertiaryTextColor}
+							color="white"
 						>
 							{state}
 						</Badge>
