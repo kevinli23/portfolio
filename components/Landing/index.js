@@ -71,8 +71,7 @@ const Landing = () => {
 					4A CS @ UWaterloo
 				</Heading>
 				<Text color="black" fontSize="lg" textAlign="left" mt="10px">
-					I am an aspiring software engineer who is great at building and breaking
-					software!
+					Professional software builder & destroyer.
 				</Text>
 			</Box>
 			<ResumeModal isOpen={isOpen} onClose={onClose} />

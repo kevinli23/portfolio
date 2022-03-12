@@ -2,7 +2,11 @@ import React from 'react';
 import { IconButton, Link, Icon } from '@chakra-ui/react';
 import { Container, Line } from './styledItems';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
+import {
+	faLinkedinIn,
+	faGithubAlt,
+	faBanana,
+} from '@fortawesome/free-brands-svg-icons';
 
 const SocialsBar = () => {
 	return (

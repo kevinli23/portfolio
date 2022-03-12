@@ -35,7 +35,7 @@ const About = () => {
 					programming them.
 				</Text>
 				<Text mt="10px" fontFamily={'Calibre'} fontSize="20px">
-					I am currently looking for Spring 2022 and Fall 2022 internships.
+					I am currently looking for Fall 2022 internships.
 				</Text>
 				{count && (
 					<Text mt="10px" fontFamily={'Calibre'} fontSize="20px">

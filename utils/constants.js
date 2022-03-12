@@ -1,8 +1,22 @@
 export const EXPERIENCE = [
 	{
+		company: 'Splunk',
+		duration: 'May 2022 - Aug 2022',
+		title: 'Incoming Backend Developer Intern',
+		items: [],
+		link: 'https://www.splunk.com/',
+	},
+	{
+		company: '1Password',
+		duration: 'Jan 2022 - Apr 2022',
+		title: 'Part Time Software Developer',
+		items: [],
+		link: 'https://1password.com/',
+	},
+	{
 		company: '1Password',
 		duration: 'Sep 2021 - Dec 2021',
-		title: 'Backend Developer Intern',
+		title: 'Software Developer Intern',
 		items: [],
 		link: 'https://1password.com/',
 	},
@@ -44,7 +58,7 @@ export const PROJECTS = [
 		state: '2021 - In Development',
 		tech: 'React, Golang, Firebase, MongoDB',
 		description:
-			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano) with over 16000 total claims.',
+			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano) with over 30000 total claims.',
 	},
 	{
 		name: 'Playbak',
