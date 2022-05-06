@@ -1,49 +1,42 @@
 export const EXPERIENCE = [
 	{
 		company: 'Splunk',
-		duration: 'May 2022 - Aug 2022',
-		title: 'Incoming Backend Developer Intern',
+		duration: 'May. 2022 - Aug. 2022',
+		title: 'Backend Engineer Intern',
 		items: [],
 		link: 'https://www.splunk.com/',
 	},
 	{
 		company: '1Password',
-		duration: 'Jan 2022 - Apr 2022',
-		title: 'Part Time Software Developer',
-		items: [],
-		link: 'https://1password.com/',
-	},
-	{
-		company: '1Password',
-		duration: 'Sep 2021 - Dec 2021',
-		title: 'Software Developer Intern',
+		duration: 'Sep. 2021 - Apr. 2022',
+		title: 'Software Engineer Intern',
 		items: [],
 		link: 'https://1password.com/',
 	},
 	{
 		company: 'Manulife',
-		duration: 'Jan 2021 - Apr 2021',
-		title: 'Full Stack Developer Intern',
+		duration: 'Jan. 2021 - Apr. 2021',
+		title: 'Full Stack Engineer Intern',
 		items: [],
 		link: 'https://www.manulife.ca/personal.html',
 	},
 	{
-		company: 'ODAIA Intelligence',
-		duration: 'May 2020 - Aug 2020',
-		title: 'Software Developer & Data Scientist Intern',
+		company: 'Odaia',
+		duration: 'May. 2020 - Aug. 2020',
+		title: 'Software Engineer & Data Scientist Intern',
 		items: [],
 		link: 'https://www.odaia.ai/',
 	},
 	{
 		company: 'Intelex Technologies',
-		duration: 'May 2019 - Aug 2019',
-		title: 'Software Developer Intern',
+		duration: 'May. 2019 - Aug. 2019',
+		title: 'Software Engineer Intern',
 		items: [],
 		link: 'https://www.intelex.com/',
 	},
 	{
 		company: 'Toronto District School Board',
-		duration: 'Jul 2018',
+		duration: 'Jul. 2018',
 		title: 'Robotics Mentor',
 		items: [],
 		link: 'https://www.tdsb.on.ca/',
@@ -52,13 +45,23 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
 	{
+		name: 'Go/Place',
+		image:
+			'https://user-images.githubusercontent.com/42505833/167006794-33728ec3-035b-4ad0-a5f7-79a5321a8541.png',
+		link: 'https://goplace.live/',
+		state: '2022',
+		tech: 'React, Golang, Cassandra, Redis',
+		description:
+			"A collaborative and concurrent drawing canvas inspired by Reddit's r/place",
+	},
+	{
 		name: 'BanBucket',
 		image: '/banbucket.JPG',
 		link: 'https://www.banbucket.ninja/',
 		state: '2021 - In Development',
 		tech: 'React, Golang, Firebase, MongoDB',
 		description:
-			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano) with over 30000 total claims.',
+			'An application that gives away free cryptocurrency namely Banano (a potassium fueled coin forked from Nano) with over 42500 total claims.',
 	},
 	{
 		name: 'Playbak',

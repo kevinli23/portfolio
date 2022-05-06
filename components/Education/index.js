@@ -41,15 +41,15 @@ const Education = () => {
 					</VStack>
 				</HStack>
 				<UnorderedList mt="15px" fontSize="20px">
-					<ListItem>3.88 Cumulative GPA</ListItem>
-					<ListItem>89.19% Cumulative Average</ListItem>
+					<ListItem>3.89 Cumulative GPA</ListItem>
+					<ListItem>89.11% Cumulative Average</ListItem>
 					<ListItem>
 						Teaching Assistant for Algebra for Honours Mathematics from September 2019
 						to December 2019
 					</ListItem>
 					<ListItem>
 						Courses: Algorithms, Computer Networks, Operating Systems, Data
-						Structures, User Interfaces, Databases
+						Structures, User Interfaces, Databases, Big Data
 					</ListItem>
 				</UnorderedList>
 			</Box>

@@ -61,18 +61,15 @@ const Landing = () => {
 				mb="60px"
 				backgroundColor={bg}
 			>
-				<Text color={tertiaryColor} fontSize="lg">
+				<Text fontFamily={font} color={tertiaryColor} fontSize="lg">
 					👋 Nice to meet ya, I'm
 				</Text>
-				<Heading mb="10px" color="black" size="4xl">
+				<Heading fontFamily={font} mb="10px" color="black" size="4xl">
 					Kevin Li
 				</Heading>
 				<Heading fontFamily={font} color={tertiaryColor} size="lg" textAlign="left">
 					4A CS @ UWaterloo
 				</Heading>
-				<Text color="black" fontSize="lg" textAlign="left" mt="10px">
-					Professional software builder & destroyer.
-				</Text>
 			</Box>
 			<ResumeModal isOpen={isOpen} onClose={onClose} />
 		</Box>

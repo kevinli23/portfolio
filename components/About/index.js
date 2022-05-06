@@ -9,7 +9,7 @@ const About = () => {
 
 	useEffect(() => {
 		(async () => {
-			const res = await fetch(`https://www.kevin-li.tech/api/rice`);
+			const res = await fetch(`https://kevin-li.vercel.app/api/rice`);
 			const data = await res.json();
 			setCount(data.count);
 		})();
@@ -52,7 +52,7 @@ const About = () => {
 				)}
 			</Container>
 
-			<Container>
+			{/* <Container>
 				<Heading fontFamily={'Calibre'} size="lg" color={secondaryColor}>
 					During my spare time I enjoy
 				</Heading>
@@ -64,13 +64,13 @@ const About = () => {
 					<ListItem>Watching cooking and comedy shows</ListItem>
 					<ListItem>Playing TFT</ListItem>
 				</UnorderedList>
-			</Container>
+			</Container> */}
 
 			<Container>
 				<Heading fontFamily={'Calibre'} color={secondaryColor} size="lg">
 					Technologies I'm currently using
 				</Heading>
-				<UnorderedList pl="2%" mt="10px" fontFamily={'Calibre'} fontSize="20px">
+				<UnorderedList pl="1%" mt="10px" fontFamily={'Calibre'} fontSize="20px">
 					<ListItem>Golang, Python, Java, JavaScript, TypeScript, MySQL</ListItem>
 					<ListItem>React, Node.js</ListItem>
 					<ListItem>Git, Gradle, Bash, MongoDB, PostgreSQL</ListItem>
